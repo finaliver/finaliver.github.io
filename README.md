@@ -1,6 +1,6 @@
 # 服务端安装
 
-1. [vultr](https://www.vultr.com) 买个虚拟机，server选Cloud Compute（便宜），然后location选择silicon valley或者LA（时延低），os选debian9 x64（自带BBR加速）
+1. 在 [vultr](https://www.vultr.com) 上面买个虚拟机，server选Cloud Compute（便宜），然后location选择silicon valley或者LA（时延低），os选debian9 x64（自带BBR加速）
 2. 使用 [一键安装脚本](https://github.com/233boy/v2ray/wiki/V2Ray/一键安装脚本)，命令：
 ```shell
 bash <(curl -s -L https://git.io/v2ray.sh)
@@ -13,14 +13,14 @@ bash <(curl -s -L https://git.io/v2ray.sh)
 vim /etc/v2ray/config.json
 ```
 在"inbound"里，"protocol": "vmess"下面，增
-加"listen":"12.34.56.78"，这个IP为实际IP，然后通过命令检查IPV4是否正常打开
+加ipv4的监听，配置为"listen":"xx.xx.xx.xx"，这个IP为实际IP，然后通过命令检查ipv4的监听是否正常打开
 检查命令
 ```shell
 root@vultr:~# netstat -anp|grep v2ray
 udp        0      0 xx.xx.xx.xx:xxxxx    0.0.0.0:*                           xxxx/v2ray
 unix  3      [ ]         STREAM     CONNECTED     xxxxx    xxxx/v2ray
 ```
-如果出了TCP6之外出现其他例如udp、tcp进程就表示可以用非IPV6了。
+如果出了tcp6之外出现其他协议例如udp、tcp，就表示可以用非ipv6协议了。这里udp还是tcp取决于承载协议。
 
 注意，每次使用v2ray config进行修改后，这个/etc/v2ray/config.json文件都会被覆盖，需要重新设置listen参数。
 

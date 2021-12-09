@@ -7,6 +7,7 @@ bash <(curl -s -L https://git.io/v2ray.sh)
 ```
 3. 协议建议选mKTP (6)
 
+> 脚本防止找不到，备份位置：[这里](https://github.com/finaliver/v2ray_install_course/blob/main/v2ray.sh)
 
 常见问题：未开启IPV4监听，详细描述点击 [这里](https://www.linodovultr.com/post/resolve-v2ray-after-install-can-not-connect.html)，增加IPV4监听，修改配置文件
 ```shell

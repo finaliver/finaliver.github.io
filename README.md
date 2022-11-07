@@ -2,7 +2,7 @@
 
 ## 2022
 
-- [安装使用v2ray](https://finaliver.github.io/2022/v2ray_install_wizard.md)
+- [安装使用v2ray](https://finaliver.github.io/2022/1107_v2ray_install_wizard.md)
 
 
 
@@ -16,4 +16,4 @@
 
 ## 2018
 
-- [使用中国移动ONENET平台实现树莓派信息自动上报](https://finaliver.github.io/2022/0725_upload_raspberry_data_to_onenet.md)
+- [使用中国移动ONENET平台实现树莓派信息自动上报](https://finaliver.github.io/2018/0725_upload_raspberry_data_to_onenet.md)

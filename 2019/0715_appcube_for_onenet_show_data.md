@@ -1,9 +1,9 @@
-# 使用中国移动ONENET平台实现树莓派信息自动上报
+# 使用ONENET应用开发环境（华为appcube）实现树莓派数据报表展示
 
 ONENET新增应用开发环境后，APP的开发功能丰富了很多。但是这套环境使用有些门槛，特别是概念比较多（Flow、Script、Data Access等），一不小心就会被绕晕。本次是在应用开发环境中开发一个报表。
 
 # 设备脚本配置
-具体操作如下：首先需要在ONENET设备管理中创建一个设备，然后使用“上报数据点”的API实现设备数据上报，脚本参见文章：[使用中国移动ONENET平台实现树莓派信息自动上报](https://www.jianshu.com/p/5de7e3fd2fef)。
+具体操作如下：首先需要在ONENET设备管理中创建一个设备，然后使用“上报数据点”的API实现设备数据上报，脚本参见文章：[使用中国移动ONENET平台实现树莓派信息自动上报](2018/0725_upload_raspberry_data_to_onenet.md)。
 >注意：最近ONENET的API调整过，现在改为json中的一个顶级key对应一个消息流的名称，因此为了合并到一个消息流，本次修改了json消息的嵌套格式，消息流名称改为pi_info，消息体是：
 
 ```
@@ -25,17 +25,17 @@ ONENET设备管理的上报数据点API文档参见：[上报数据点API](https
 根据协议，在postman模拟消息，可以正常工作：
 >本次postman模拟的消息格式需要完全参考ONENET的API定义。在header中还需要配置api-key，这里略。
 
-![image.PNG](https://upload-images.jianshu.io/upload_images/7311839-67d3cb2c1c19ed29.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.PNG](2019/0725/refer1.webp)
 
 postman发送成功后，在ONENET中可以查到数据，如下：
-![image.PNG](https://upload-images.jianshu.io/upload_images/7311839-113054e1c7b650cf.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.PNG](2019/0725/refer2.webp)
 
 # 应用开发环境开发
 然后可以在ONENET应用开发环境进行开发了。
 
 ## 创建项目
 开发过程：首先点击创建项目，按钮，创建一个APP项目，这里随便起一个名字即可：
-![image.PNG](https://upload-images.jianshu.io/upload_images/7311839-77b2773a6b2c8d46.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.PNG](2019/0725/refer3.webp)
 
 ## 进入项目开发视图
 点击进去后，按照下图12345的顺序，分别创建一个元素（这个系统中管这类东东叫资产），创建顺序是：

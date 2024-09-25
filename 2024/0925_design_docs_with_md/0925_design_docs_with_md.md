@@ -24,7 +24,9 @@ sequenceDiagram
     Alice-->>Bob: Hi Bob
 ```
 
-时序图渲染效果：
+时序图渲染效果
+> github在preview界面可以正常渲染展示，但是在pages.github.com上却无法渲染（看上去是一个github的bug）。如果下面无法渲染，说明你正在使用 [github pages](https://finaliver.github.io/2024/0925_design_docs_with_md/0925_design_docs_with_md.html) 访问，请切换到 [github preview页面](https://github.com/finaliver/finaliver.github.io/blob/main/2024/0925_design_docs_with_md/0925_design_docs_with_md.md) 查看正常渲染效果。
+
 ```mermaid
 sequenceDiagram
     participant Alice

@@ -13,7 +13,7 @@
 
 1. 时序图推荐使用[mermaid语法](https://mermaid.nodejs.cn/intro/syntax-reference.html)，也可以使用[plantuml图语法](https://plantuml.com/zh)。注意：github（本站）不支持在线渲染plantuml，VSC和obsidian也默认不支持，需要安装相关插件。
 2. 其他UML图（常见包括甘特图，流程图等）也都可以使用上述图语法。
-3. 组网图等一些过于复杂，无法用图语法绘出的，推荐使用 [diagram.io矢量图绘图工具](draw.io)，可以下载windows版本或者mac版本，按需使用。
+3. 组网图等一些过于复杂，无法用图语法绘出的，推荐使用 [diagram.io矢量图绘图工具](https://draw.io)，可以下载windows版本或者mac版本，按需使用。
 
 ### mermaid参考样例
 ```code

@@ -50,4 +50,4 @@ Alice-->Bob: Hi Bob
 ```
 
 ### svg引入参考样例
-[svg_demo](images/svg_demo.svg)
+![svg_demo](images/svg_demo.svg)

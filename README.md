@@ -2,6 +2,10 @@
 
 >**Updated 2022/11/08 部分历史博客在简书上，会持续搬迁到这里来。**
 
+## 2024
+
+- [使用markdown管理设计文档](2024/0925_design_docs_with_md/0925_design_docs_with_md.md)
+
 ## 2022
 
 - [安装使用v2ray](2022/1107_v2ray_install_wizard.md)

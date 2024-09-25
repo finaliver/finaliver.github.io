@@ -6,8 +6,8 @@
 ## 本地编辑工具推荐
 主要推荐2个markdown编辑器（均支持windows和mac），并且都带有比较丰富的三方扩展。
 
-1. [Visual Studio Code](https://code.visualstudio.com)
-2. [Obsidian](https://obsidian.md)
+1. [Visual Studio Code](https://code.visualstudio.com)，推荐插件 Markdown ALL-IN-ONE，Markdown Preview Enhanced等
+2. [Obsidian](https://obsidian.md)，推荐插件 WebPage HTML Export，PlantUML等
 
 ## 设计文档中画图
 
